@@ -1,0 +1,16 @@
+{
+  "name": "jest-testing",
+  "version": "1.0.0",
+  "description": "Jest Unit Testing Examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Justin Doak <justinhdoak@gmail.com>",
+  "license": "ISC",
+  "jest": {
+    "testMatch": [
+      "<rootDir>/**/**test.js"
+    ]
+  }
+}
