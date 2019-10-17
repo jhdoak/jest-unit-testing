@@ -10,7 +10,7 @@ describe('format full name', () => {
 
   afterEach(() => {
     jest.clearAllMocks();
-  })
+  });
 
   it('returns a capitalized username v1', () => {
     const user = {

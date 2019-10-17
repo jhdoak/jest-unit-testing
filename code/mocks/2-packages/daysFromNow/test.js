@@ -15,7 +15,7 @@ describe('days from now', () => {
 
   afterEach(() => {
     jest.clearAllMocks();
-  })
+  });
 
   it('adds the passed number of days and formats return', () => {
     const daysToAdd = 4;
