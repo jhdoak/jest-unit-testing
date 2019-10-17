@@ -12,5 +12,8 @@
     "testMatch": [
       "<rootDir>/**/**test.js"
     ]
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }
