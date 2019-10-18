@@ -1,3 +1,11 @@
+/*
+  toBeNull();
+  toBeUndefined();
+  toBeDefined();
+  toBeTruthy();
+  toBeFalsy();
+*/
+
 test('null value', () => {
   expect(null).toBeNull();
   expect(null).not.toBeUndefined();
