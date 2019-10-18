@@ -3,13 +3,13 @@ expect.extend({
     const pass = received >= floor && received <= ceiling;
     if (pass) {
       return {
-        message: () => `expected ${received} not to be within range ${floor} - ${ceiling}`,
         pass: true,
+        message: () => `expected ${received} not to be within range ${floor} - ${ceiling}`,
       };
     } else {
       return {
-        message: () => `expected ${received} to be within range ${floor} - ${ceiling}`,
         pass: false,
+        message: () => `expected ${received} to be within range ${floor} - ${ceiling}`,
       };
     }
   },

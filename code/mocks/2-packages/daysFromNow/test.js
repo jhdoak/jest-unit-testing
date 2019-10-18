@@ -6,7 +6,7 @@ describe('days from now', () => {
   const mockMomentObject = {
     add: jest.fn().mockReturnThis(),
     format: jest.fn().mockReturnValue('a formatted date')
-  }
+  };
 
   // Needs to be set up before require
   jest.mock('moment', () => mockMoment);

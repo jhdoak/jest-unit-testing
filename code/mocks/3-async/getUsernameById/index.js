@@ -1,4 +1,4 @@
-const fetchUserById = require('../fetchUserById');
+const fetchUserById = require('../services/fetchUserById');
 
 const getUsernameById = async (id) => {
   const user = await fetchUserById(id);

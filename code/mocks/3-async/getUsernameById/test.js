@@ -3,7 +3,7 @@ describe('get username by id', () => {
     .mockResolvedValue({ username: 'justin_doak' });
 
   // Needs to be set up before require
-  jest.mock('../fetchUserById', () => mockFetchUser);
+  jest.mock('../services/fetchUserById', () => mockFetchUser);
 
   const getUsernameById = require('./index');
 

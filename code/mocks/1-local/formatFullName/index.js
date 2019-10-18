@@ -1,4 +1,4 @@
-const capitalize = require('../capitalize');
+const capitalize = require('../utils/capitalize');
 
 const formatFullName = (user) => {
   if (!user) {
