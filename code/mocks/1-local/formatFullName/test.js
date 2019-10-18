@@ -1,18 +1,22 @@
 describe('format full name', () => {
-  const mockCapitalize = jest.fn()
-    .mockReturnValueOnce('formattedFirstName')
-    .mockReturnValueOnce('formattedLastName');
+  const mockCapitalize = jest.fn();
 
   // Needs to be set up before require
   jest.mock('../capitalize', () => mockCapitalize);
 
   const formatFullName = require('./index');
 
-  afterEach(() => {
-    jest.clearAllMocks();
+  beforeEach(() => {
+    mockCapitalize
+      .mockReturnValueOnce('formattedFirstName')
+      .mockReturnValueOnce('formattedLastName');
   });
 
-  it.skip('returns a capitalized username v1', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  it('returns a capitalized username v1', () => {
     const user = {
       firstName: 'justin',
       lastName: 'doak'

@@ -8,7 +8,7 @@ describe('get user by id controller', () => {
   
   const controller = require('./index');
 
-  const req = { params: {} }
+  const req = {};
 
   const mockRes = {
     status: jest.fn().mockReturnThis(),
@@ -17,11 +17,13 @@ describe('get user by id controller', () => {
 
   const mockNext = jest.fn();
 
-  afterEach(() => {
-    jest.clearAllMocks();
-
+  beforeEach(() => {
     req.params = {};
     userToReturn = null;
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
   });
   
   it('gets user by id, responds with 200 and fetched user', async () => {
