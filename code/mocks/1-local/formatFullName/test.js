@@ -12,11 +12,12 @@ describe('format full name', () => {
     jest.clearAllMocks();
   });
 
-  it('returns a capitalized username v1', () => {
+  it.skip('returns a capitalized username v1', () => {
     const user = {
       firstName: 'justin',
       lastName: 'doak'
     };
+
     const result = formatFullName(user);
 
     expect(mockCapitalize.mock.calls[0][0]).toBe('justin');
@@ -24,7 +25,7 @@ describe('format full name', () => {
     expect(result).toBe('formattedFirstName formattedLastName');
   });
 
-  it.skip('returns a capitalized username v2', () => {
+  it('returns a capitalized username v2', () => {
     const user = {
       firstName: 'justin',
       lastName: 'doak'
@@ -37,7 +38,7 @@ describe('format full name', () => {
     expect(result).toBe('formattedFirstName formattedLastName');
   });
 
-  it.skip('returns empty string when no user is passed', () => {
+  it('returns empty string when no user is passed', () => {
     const result = formatFullName();
     
     expect(mockCapitalize).not.toHaveBeenCalled();

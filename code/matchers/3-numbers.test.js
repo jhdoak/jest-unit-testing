@@ -6,13 +6,13 @@ test('numbers', () => {
   expect(number).toBeLessThanOrEqual(5.5);
 });
 
-test.skip('number equality', () => {
+test('number equality', () => {
   number = 5;
   expect(number).toBe(5);
   expect(number).toEqual(5);
 });
 
-test.skip('adding floats', () => {
+test('adding floats', () => {
   const result = 0.2 + 0.4;
   // expect(result).toBe(0.6);
   expect(result).toBeCloseTo(0.6);

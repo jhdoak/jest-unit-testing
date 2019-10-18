@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "author": "Justin Doak <justinhdoak@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "jest": {
     "testMatch": [
       "<rootDir>/**/**test.js"

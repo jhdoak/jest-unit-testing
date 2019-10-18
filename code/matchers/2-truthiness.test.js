@@ -6,7 +6,7 @@ test('null value', () => {
   expect(null).toBeFalsy();
 });
 
-test.skip('undefined value', () => {
+test('undefined value', () => {
   expect(undefined).not.toBeNull();
   expect(undefined).toBeUndefined();
   expect(undefined).not.toBeDefined();
@@ -14,7 +14,7 @@ test.skip('undefined value', () => {
   expect(undefined).toBeFalsy();
 });
 
-test.skip('falsy value', () => {
+test('falsy value', () => {
   const zero = 0;
   expect(zero).not.toBeNull();
   expect(zero).not.toBeUndefined();

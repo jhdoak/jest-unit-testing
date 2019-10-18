@@ -1,12 +1,12 @@
 describe('days from now', () => {
+  const mockMoment = jest.fn().mockImplementation(
+    () => mockMomentObject
+  );
+  
   const mockMomentObject = {
     add: jest.fn().mockReturnThis(),
     format: jest.fn().mockReturnValue('a formatted date')
   }
-
-  const mockMoment = jest.fn().mockImplementation(
-    () => mockMomentObject
-  );
 
   // Needs to be set up before require
   jest.mock('moment', () => mockMoment);
@@ -19,6 +19,7 @@ describe('days from now', () => {
 
   it('adds the passed number of days and formats return', () => {
     const daysToAdd = 4;
+
     const result = daysFromNow(daysToAdd);
 
     expect(mockMoment).toHaveBeenCalled();
